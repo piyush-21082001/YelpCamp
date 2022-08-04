@@ -31,7 +31,7 @@ app.locals.moment = require('moment')
 // PASSPORT CONFIG
 app.use(
   require('express-session')({
-    secret: 'Learning is a daily process',
+    secret: process.env.SECRET,
     resolve: false,
     saveUninitialized: false,
     resave: true,
